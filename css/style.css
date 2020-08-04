@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#section-1 {
+    position: relative;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 0 10px;
+}
