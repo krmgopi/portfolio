@@ -1,0 +1,39 @@
+#shadow {
+    height: 200px;
+    width: auto;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    box-shadow: 0 0 15px rgb(0, 0, 0, .5);
+    animation: floating 4s alternate infinite;
+}
+
+.gr {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 5rem;
+}
+
+.name {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5rem;
+}
+
+@keyframes floating {
+    0% {
+        border-radius: 64% 36% 27% 73%/55% 58% 56% 23%;
+    }
+    15% {
+        border-radius: 14% 96% 87% 13%/15% 18% 36% 93%;
+    }
+    50% {
+        border-radius: 77% 21% 32% 93%/98% 91% 94% 20%;
+    }
+    75% {
+        border-radius: 28% 72% 64% 36%/39% 11% 55% 51%;
+    }
+    100% {
+        border-radius: 64% 36% 27% 73%/55% 58% 56% 23%;
+    }
+}

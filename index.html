@@ -7,7 +7,15 @@
     <title>Portfolio</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mako&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyframes.css">
 </head>
 
 <body>
@@ -20,30 +28,252 @@
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="work.html">Work</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
     <ul class="side-nav" id="mobile-nav">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
     <!-- Navbar End -->
 
-    <section id="section-1">
+    <!-- Showcase -->
+    <section class="scrollspy" id="home">
+        <canvas id="mycanvas"></canvas>
         <div class="container">
             <div class="row">
-                <div style="height: 600px;" class="valign-wrapper">
-                    <h4 class="center">TEXT TO CENTER ALIGN</h4>
+                <div style="height: 550px;" class="valign-wrapper showcase">
+                    <div class="col l12 m12 s12">
+                        <div id="shadow">
+                            <h3 class="center-align gr">GOPINATH</h3>
+                            <h3 class="center-align name">FRONT END DEVELOPER</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Showcase End -->
+
+    <!-- About -->
+    <section class="scrollspy" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col m12 s12">
+                    <h2 class="center-align">ABOUT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col l5 m5 s12  center-on-small-only">
+                    <div class="image-container">
+                        <img class="picc" src="images/about.jpg">
+                    </div>
+                </div>
+                <div class="col l7 m7 s12">
+                    <div id="intro">
+                        <p class="center">Hello everyone I'm Gopinath from India and I love technology.</p>
+                        <p class="center">My journey started with Flash Action Script 3.0 where I created some script controlled animations and then later moved into web development where I learned the fundamentals of web and web technologies like HTML5 CSS3 and JS including
+                            photoshop for designing website banners.</p>
+                        <p class="center">Now I have a strong knowledge in HTML5 CSS3 and JS and currently into Front-End Framework React.</p>
+                        <p class="center">I am a self taught developer who loves javascript very much and I am currently looking for a front end dev role.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- About End -->
+
+    <!-- Projects -->
+    <section class="scrollspy" id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col m12 s12">
+                    <h2 class="center-align">MY PROJECTS</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- ROW 1 -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card z-depth-2">
+                        <div class="card-image">
+                            <img src="images/js-crud.jpg" alt="image">
+                        </div>
+                        <div class="card-content">
+                            <p>A simple javascript CRUD application with local storage implementation</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://js-crud.netlify.app/" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-2">
+                        <div class="card-image">
+                            <img src="images/random-numbers.jpg" alt="image">
+                        </div>
+                        <div class="card-content">
+                            <p>Generating sequence of random numbers in javascript</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://random-numbers-in-js.netlify.app/" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-2">
+                        <div class="card-image">
+                            <img src="images/floating-particles.jpg" alt="image">
+                        </div>
+                        <div class="card-content">
+                            <p>Floating bubbles using the HTML Canvas API - which can be used as backgrounds</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://floating-particles.netlify.app/" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card z-depth-2">
+                        <div class="card-image">
+                            <img src="images/chuck-norris.jpg" alt="image">
+                        </div>
+                        <div class="card-content">
+                            <p>Using fetch API we generate Chuck Norris jokes</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://api-chucknorris-jokes.netlify.app/" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-2">
+                        <div class="card-image">
+                            <img src="images/geo-location-api.jpg" alt="image">
+                        </div>
+                        <div class="card-content">
+                            <p>A Geo location API to get details of a country</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://geo-location-api.netlify.app/" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-2">
+                        <div class="card-image">
+                            <img src="images/letter-counter.jpg" alt="image">
+                        </div>
+                        <div class="card-content">
+                            <p>Letter counter in a text area using javascript</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://letter-counter.netlify.app/" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects End -->
+
+    <section class="container" id="skillset">
+        <div class="row">
+            <div class="col m12 s12">
+                <h2 class="center-align">SKILL SET</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col m12 s12 center">
+                <img src="images/html.png" alt="html5">
+                <img src="images/css.png" alt="css3">
+                <img src="images/js.png" alt="javascript">
+                <img src="images/react.png" alt="react">
+                <img src="images/vs-code.png" alt="react">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col m12 s12">
+                    <h2 class="center-align">CONTACT</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m6 offset-m3 s12">
+                    <form action="POST" data-netlify="true">
+                        <div class="input-field">
+                            <input type="text" class="validate" id="first_name" name="first_name" placeholder="enter first name">
+                            <label for="first_name">First Name</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" class="validate" id="last_name" name="last_name" placeholder="enter last name">
+                            <label for="first_name">Last Name</label>
+                        </div>
+
+                        <div class="input-field">
+                            <textarea class="materialize-textarea" id="message" name="message" placeholder="enter message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="input-field">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+
+                        <div class="center">
+                            <input class="btn center black" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIXED ACTION BUTTON [on hover] -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large black pulse">
+            <i class="fas fa-plus"></i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating btn-small cyan" href="https://twitter.com/gopinathKRM" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating btn-small black" href="https://github.com/krmgopi" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
 
     <!-- Footer -->
     <footer class="page-footer black">
@@ -57,15 +287,16 @@
 
 
 </body>
-<script src="js/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="js/bg.js"></script>
 
 <script>
     $(document).ready(function() {
-        // Custom JS & jQuery here
         // Init sidenav
         $('.button-collapse').sideNav();
+        $('.scrollspy').scrollSpy();
     });
 </script>
 

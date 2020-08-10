@@ -2,13 +2,93 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Cuprum', sans-serif;
 }
 
-#section-1 {
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+}
+
+h4 {
+    font-family: 'Mako', sans-serif;
+}
+
+#home {
+    position: relative;
+    height: 600px;
+}
+
+#mycanvas {
+    position: absolute;
+}
+
+.showcase {
     position: relative;
 }
 
+.line {
+    border: 2px solid black;
+}
+
+#about {
+    background-color: #f6f6f6;
+}
+
+.picc {
+    width: 80%;
+    height: 70%;
+    border-radius: 20%;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+#skillset img {
+    width: 80px;
+    height: 80px;
+}
+
 footer {
-    background-color: black;
+    background-color: rgb(34, 31, 31);
     padding: 10px 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #about {
+        height: 670px;
+    }
+    #intro {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #about {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #about {
+        height: 400px;
+    }
+    #skillset img {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #about {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #about {
+        height: 500px;
+    }
+    #intro {
+        line-height: 2;
+        font-size: 1.1rem;
+    }
 }

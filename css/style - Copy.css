@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', sans-serif;
+}
+
+#section-1 {
+    position: relative;
+    height: 600px;
+}
+
+#mycanvas {
+    position: absolute;
+}
+
+.gr {
+    font-family: 'Courgette', cursive;
+    font-size: 5rem;
+}
+
+.name {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 2.5rem;
+}
+
+.showcase {
+    position: relative;
+}
+
+.line {
+    border: 2px solid black;
+}
+
+#about {
+    height: 500px;
+    background-color: #f6f6f6;
+}
+
+.picc {
+    width: 100%;
+    height: 70%;
+    border-radius: 20%;
+}
+
+footer {
+    background-color: rgb(34, 31, 31);
+    padding: 10px 0 10px;
+}

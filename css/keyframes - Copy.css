@@ -1,0 +1,120 @@
+.html5 {
+    position: absolute;
+    width: 10%;
+    animation-name: html5;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes html5 {
+    0% {
+        left: -50px;
+        top: -50px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 50px;
+        top: 50px;
+        transform: rotate(360deg);
+    }
+}
+
+.css3 {
+    position: absolute;
+    width: 9%;
+    animation-name: css3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes css3 {
+    0% {
+        right: -100px;
+        transform: rotate(0deg);
+    }
+    100% {
+        right: 100px;
+        transform: rotate(360deg);
+    }
+}
+
+.js {
+    position: absolute;
+    width: 13%;
+    animation-name: js;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes js {
+    0% {
+        left: -200px;
+        bottom: -100px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: -200px;
+        bottom: 100px;
+        transform: rotate(360deg);
+    }
+}
+
+.react {
+    position: absolute;
+    width: 10%;
+    animation-name: react;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes react {
+    0% {
+        right: -200px;
+        bottom: -200px;
+        transform: rotate(0deg);
+    }
+    100% {
+        right: 200px;
+        bottom: 200px;
+        transform: rotate(360deg);
+    }
+}
+
+#shadow {
+    height: 200px;
+    width: auto;
+    background: rgb(255, 255, 240);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    box-shadow: 0 0 15px rgb(0, 0, 0, .2);
+    animation: an 4s alternate infinite;
+}
+
+#shadow h1 {
+    height: 300px;
+    width: auto;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    animation: an 4s alternate infinite;
+}
+
+@keyframes an {
+    0% {
+        border-radius: 64% 36% 27% 73%/55% 58% 56% 23%;
+    }
+    15% {
+        border-radius: 14% 96% 87% 13%/15% 18% 36% 93%;
+    }
+    50% {
+        border-radius: 77% 21% 32% 93%/98% 91% 94% 20%;
+    }
+    75% {
+        border-radius: 28% 72% 64% 36%/39% 11% 55% 51%;
+    }
+    100% {
+        border-radius: 64% 36% 27% 73%/55% 58% 56% 23%;
+    }
+}
