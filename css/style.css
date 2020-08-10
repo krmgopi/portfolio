@@ -48,6 +48,10 @@ h4 {
     height: 80px;
 }
 
+.captcha {
+    margin-bottom: 50px;
+}
+
 footer {
     background-color: rgb(34, 31, 31);
     padding: 10px 0 10px;
